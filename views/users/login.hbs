@@ -1,0 +1,17 @@
+<form action="/user/login" method="POST" class="w-50 mx-auto">
+    {{#if mensajeError}}
+        <div class="alert alert-danger" role="alert">
+            {{mensajeError}}
+        </div>
+    {{/if}}
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="username">
+        <label for="floatingInput">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+        <label for="floatingPassword">Password</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a class="btn btn-link" href="/user/signin">No estoy registrada</a>
+</form>
